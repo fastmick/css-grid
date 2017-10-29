@@ -48,11 +48,31 @@ aside {
 
 footer {
     background-color: rgb(10, 94, 66);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / span 4;
+    div:first-child {
+        background-color: rgb(165, 243, 217);
+        -ms-grid-row: 1;
+        grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1 / span 2;
+    }
+    div:last-child {
+        background-color: rgb(99, 92, 93);
+        -ms-grid-row: 2;
+        grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1 / span 2;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -70,6 +90,22 @@ footer {
         grid-row: 2;
         -ms-grid-column: 4;
         grid-column: 4;
+    }
+    footer {
+        div:first-child {
+            background-color: rgb(165, 243, 217);
+            -ms-grid-row: 1;
+            grid-row: 1;
+            -ms-grid-column: 1;
+            grid-column: 1;
+        }
+        div:last-child {
+            background-color: rgb(99, 92, 93);
+            -ms-grid-row: 1;
+            grid-row: 1;
+            -ms-grid-column: 2;
+            grid-column: 2;
+        }
     }
 }
 
