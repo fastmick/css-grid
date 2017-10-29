@@ -1,5 +1,5 @@
 .main-wrapper {
-    border: 1px solid #000;
+    border: 1px solid rgb(197, 101, 101);
     display: -ms-grid;
     display: grid;
     // -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -20,7 +20,7 @@ img {
 }
 
 header {
-    background-color: rgb(138, 11, 11);
+    background-color: rgb(255, 255, 255);
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
