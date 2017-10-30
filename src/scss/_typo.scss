@@ -1,0 +1,10 @@
+.headline {
+    font-family: 'UnifrakturMaguntia', cursive;
+    &--big {
+        @include font-size(50);
+    }
+    .site-header & {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
