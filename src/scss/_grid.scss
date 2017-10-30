@@ -8,9 +8,21 @@ infos zun grid
  
 */
 
+
+/*
+font-family: 'UnifrakturMaguntia', cursive;
+font-family: 'Sancreek', cursive;
+font-family: 'Maiden Orange', cursive;
+font-family: 'UnifrakturCook', cursive;
+*/
+
 .site {
     @include grid;
-    border: 1px solid rgb(199, 20, 20);
+    background-image: url(../images/page-kachel-bg.jpg);
+    background-repeat: repeat;
+    // background-size: 100%;
+    // background-origin: border-box;
+    border: 1px solid rgb(199, 142, 20);
     // -ms-grid-rows: 1fr 1fr 1fr 1fr;
     // grid-template-rows: 1fr 1fr 1fr 1fr;
     -ms-grid-columns: $columns-width $columns-width $columns-width $columns-width $columns-width $columns-width $columns-width $columns-width;
@@ -19,18 +31,40 @@ infos zun grid
     // grid-gap: 12px;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 header {
-    background-color: rgb(76, 35, 226);
+    // background-color: rgb(76, 35, 226);
     @include grid-row(1);
     @include grid-column(1, 8);
+    // margin-bottom: 20px;
 }
 
 .main-navigation {
-    background-color: rgb(35, 226, 137);
     @include grid-row(2);
     @include grid-column(1, 8);
+    // background-color: rgb(35, 226, 137);
+    border-bottom: 2px solid $color-border;
+    border-top: 2px solid $color-border;
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        &__item {
+            &__link {
+                @include font-size(27);
+                color: $color-text;
+                font-family: 'UnifrakturCook', cursive;
+                display: block;
+                cursor: pointer;
+                padding: 20px 0;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .main-content {

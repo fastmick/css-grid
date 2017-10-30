@@ -1,23 +1,45 @@
 /*
 grid mixins
 */
+.headline {
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.headline--big {
+  font-size: 50px;
+  font-size: 3.125rem;
+}
+
+.site-header .headline {
+  text-align: center;
+  margin: 20px 0;
+}
+
 /*
 
 infos zun grid
  
 */
+/*
+font-family: 'UnifrakturMaguntia', cursive;
+font-family: 'Sancreek', cursive;
+font-family: 'Maiden Orange', cursive;
+font-family: 'UnifrakturCook', cursive;
+*/
 .site {
   display: -ms-grid;
   display: grid;
-  border: 1px solid #c71414;
+  background-image: url(../images/page-kachel-bg.jpg);
+  background-repeat: repeat;
+  border: 1px solid #c78e14;
   -ms-grid-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
   grid-template-columns: repeat(8, 12.5%);
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 header {
-  background-color: #4c23e2;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -26,12 +48,32 @@ header {
 }
 
 .main-navigation {
-  background-color: #23e289;
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/span 8;
+  border-bottom: 2px solid #8e5722;
+  border-top: 2px solid #8e5722;
+}
+
+.main-navigation__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation__list__item__link {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  color: #653e18;
+  font-family: 'UnifrakturCook', cursive;
+  display: block;
+  cursor: pointer;
+  padding: 20px 0;
+  text-decoration: none;
 }
 
 .main-content {
@@ -162,5 +204,6 @@ footer {
 
 body {
   background: #fff;
+  color: #653e18;
   font-family: Arial, Helvetica, sans-serif;
 }
