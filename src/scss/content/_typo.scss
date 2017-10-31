@@ -5,6 +5,14 @@
     &--fraktur {
         font-family: 'UnifrakturMaguntia', cursive;
     }
+    &--top-news {
+        @include font-size(40);
+        font-weight: normal;
+        @media screen and (min-width: 600px) {
+            text-align: justify;
+            text-align-last: center;
+        }
+    }
     .site-header & {
         text-align: center;
         margin: 20px 0;

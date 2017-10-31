@@ -1,26 +1,4 @@
-@import "variables";
-@import "mixins";
-@import "typo";
-@import "main-navigation";
-@import "grid";
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background: #fff;
-    color: $color-text;
-    font-family: 'Libre Baskerville', serif;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
-.top-news {
-    display: block;
-    margin: 0 0 20px 0;
-    // text-align: justify;
-    // text-align-last: center;
-}
+@import "_utilities.scss";
+@import "_layout.scss";
+@import "_content.scss";
+@import "_components.scss";

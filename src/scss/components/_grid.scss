@@ -41,7 +41,7 @@ header {
     // margin-bottom: 20px;
 }
 
-.main-navigation {
+.navigation-wrapper {
     @include grid-row(2);
     @include grid-column(1, 8);
 }
@@ -57,8 +57,8 @@ header {
     @include grid-column(1, 8);
 }
 
-.aside {
-    background-color: rgb(119, 126, 123);
+.aside-home-page {
+    // background-color: rgb(119, 126, 123);
     &--first {
         @include grid-row(5);
         @include grid-column(1, 8);
@@ -99,7 +99,7 @@ footer {
         @include grid-row(4);
         @include grid-column(3, 4);
     }
-    .aside {
+    .aside-home-page {
         &--first {
             @include grid-row(4);
             @include grid-column(1, 2);
