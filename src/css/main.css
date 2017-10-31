@@ -11,6 +11,14 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
+.site-header__infos {
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
 .aside-home-page,
 .main-content {
   padding: 10px;
@@ -67,7 +75,7 @@ figure img {
 
 .site-header .headline {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 10px;
 }
 
 .navigation {
@@ -106,6 +114,7 @@ figure img {
   font-size: 1.25rem;
   border-bottom: 1px solid #8e5722;
   margin: 0 0 15px;
+  padding-bottom: 5px;
 }
 
 /*
