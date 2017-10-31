@@ -44,102 +44,86 @@ header {
 .main-navigation {
     @include grid-row(2);
     @include grid-column(1, 8);
-    // background-color: rgb(35, 226, 137);
-    border-bottom: 2px solid $color-border;
-    border-top: 2px solid $color-border;
-    &__list {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-        margin: 0;
-        padding: 0;
-        &__item {
-            &__link {
-                @include font-size(27);
-                color: $color-text;
-                font-family: 'UnifrakturCook', cursive;
-                display: block;
-                cursor: pointer;
-                padding: 20px 0;
-                text-decoration: none;
-            }
-        }
-    }
+}
+
+.top-news {
+    @include grid-row(3);
+    @include grid-column(1, 8);
 }
 
 .main-content {
-    background-color: rgb(185, 197, 192);
-    @include grid-row(3);
+    // background-color: rgb(185, 197, 192);
+    @include grid-row(4);
     @include grid-column(1, 8);
 }
 
 .aside {
     background-color: rgb(119, 126, 123);
     &--first {
-        @include grid-row(4);
+        @include grid-row(5);
         @include grid-column(1, 8);
     }
     &--second {
-        @include grid-row(5);
+        @include grid-row(6);
         @include grid-column(1, 8);
     }
 }
 
 .article {
     &--first {
-        @include grid-row(6);
-        @include grid-column(1, 8);
-    }
-    &--second {
         @include grid-row(7);
         @include grid-column(1, 8);
     }
-    &--third {
+    &--second {
         @include grid-row(8);
         @include grid-column(1, 8);
     }
-    &--fourth {
+    &--third {
         @include grid-row(9);
+        @include grid-column(1, 8);
+    }
+    &--fourth {
+        @include grid-row(10);
         @include grid-column(1, 8);
     }
 }
 
 footer {
     background-color: rgb(240, 78, 78);
-    @include grid-row(10);
+    @include grid-row(11);
     @include grid-column(1, 8);
 }
 
 @media screen and (min-width: 768px) {
     .main-content {
-        @include grid-row(3);
-        @include grid-column(3, 6);
+        @include grid-row(4);
+        @include grid-column(3, 4);
     }
     .aside {
         &--first {
-            @include grid-row(3);
+            @include grid-row(4);
             @include grid-column(1, 2);
         }
         &--second {
-            @include grid-row(3);
+            @include grid-row(4);
             @include grid-column(7, 2);
         }
     }
     .article {
         &--first {
-            @include grid-row(4);
+            @include grid-row(5);
             @include grid-column(1, 2);
         }
         &--second {
-            @include grid-row(4);
+            @include grid-row(5);
             @include grid-column(3, 2);
         }
         &--third {
-            @include grid-row(4);
+            @include grid-row(5);
             @include grid-column(5, 2);
         }
         &--fourth {
-            @include grid-row(4);
+            @include grid-row(5);
             @include grid-column(7, 2);
         }
     }

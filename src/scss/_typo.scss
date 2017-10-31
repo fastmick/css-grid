@@ -1,7 +1,9 @@
 .headline {
-    font-family: 'UnifrakturMaguntia', cursive;
     &--big {
         @include font-size(50);
+    }
+    &--fraktur {
+        font-family: 'UnifrakturMaguntia', cursive;
     }
     .site-header & {
         text-align: center;
