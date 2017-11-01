@@ -117,6 +117,27 @@ figure img {
   padding-bottom: 5px;
 }
 
+.news-block__text {
+  display: block;
+}
+
+.news-block__text::first-letter {
+  font-size: 26px;
+  font-size: 1.625rem;
+  text-transform: uppercase;
+}
+
+.news-block--with-image figure {
+  display: inline-block;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  aside .news-block--with-image figure {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
 /*
 
 infos zun grid
