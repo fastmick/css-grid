@@ -17,13 +17,13 @@
         figure {
             display: inline-block;
         }
-        @media screen and (min-width: 600px) and (max-width: 767px) {
-            aside & {
-                figure {
-                    float: left;
-                    margin-right: 20px;
-                }
-            }
-        }
+        // @media screen and (min-width: 600px) and (max-width: 767px) {
+        //     aside & {
+        //         figure {
+        //             float: left;
+        //             margin-right: 20px;
+        //         }
+        //     }
+        // }
     }
 }
