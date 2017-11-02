@@ -1,4 +1,10 @@
 .news-block {
+    .news-block-wrapper & {
+        padding: 10px;
+        &:not(:last-child) {
+            border-right: 1px solid $color-border;
+        }
+    }
     &__headline {
         @include font-size(20);
         border-bottom: 1px solid $color-border;
@@ -17,13 +23,5 @@
         figure {
             display: inline-block;
         }
-        // @media screen and (min-width: 600px) and (max-width: 767px) {
-        //     aside & {
-        //         figure {
-        //             float: left;
-        //             margin-right: 20px;
-        //         }
-        //     }
-        // }
     }
 }

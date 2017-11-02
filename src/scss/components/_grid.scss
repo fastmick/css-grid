@@ -69,9 +69,29 @@ header {
     }
 }
 
+.news-block-wrapper {
+    @include grid;
+    -ms-grid-columns: 33.33333% 33.33333% 33.33333%;
+    grid-template-columns: repeat(3, 33.33333%);
+    @include grid-row(7);
+    @include grid-column(1, 8);
+    article:nth-child(1) {
+        // @include grid-row(1);
+        @include grid-column(1, 1);
+    }
+    article:nth-child(2) {
+        // @include grid-row(1);
+        @include grid-column(2, 1);
+    }
+    article:nth-child(3) {
+        // @include grid-row(1);
+        @include grid-column(3, 1);
+    }
+}
+
 footer {
     background-color: rgb(240, 78, 78);
-    @include grid-row(7);
+    @include grid-row(8);
     @include grid-column(1, 8);
 }
 
