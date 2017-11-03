@@ -11,6 +11,10 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
+.site {
+  position: relative;
+}
+
 .site-header__infos {
   font-size: 14px;
   font-size: 0.875rem;
@@ -21,6 +25,7 @@ body {
 
 .aside-home-page,
 .main-content {
+  margin-bottom: 20px;
   padding: 10px;
 }
 
@@ -138,6 +143,13 @@ figure img {
 
 .news-block--with-image figure {
   display: inline-block;
+}
+
+.news-block.show-full-news-block {
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  width: 600px;
 }
 
 /*

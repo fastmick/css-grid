@@ -8,6 +8,10 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+.site {
+    position: relative;
+}
+
 .site-header {
     &__infos {
         @include font-size(14);
@@ -19,6 +23,7 @@ body {
 
 .aside-home-page,
 .main-content {
+    margin-bottom: 20px;
     padding: 10px;
 }
 
