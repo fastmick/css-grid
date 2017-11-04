@@ -3,7 +3,9 @@
 }
 
 body {
-    background: #fff;
+    // background: #fff;
+    background-image: url(../images/page-kachel-bg.jpg);
+    background-repeat: repeat;
     color: $color-text;
     font-family: 'Libre Baskerville', serif;
 }

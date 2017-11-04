@@ -6,7 +6,8 @@ grid mixins
 }
 
 body {
-  background: #fff;
+  background-image: url(../images/page-kachel-bg.jpg);
+  background-repeat: repeat;
   color: #653e18;
   font-family: 'Libre Baskerville', serif;
 }
@@ -57,6 +58,12 @@ figure img {
   border: 1px solid #8e5722;
 }
 
+/*
+font-family: 'UnifrakturMaguntia', cursive;
+font-family: 'Sancreek', cursive;
+font-family: 'Maiden Orange', cursive;
+font-family: 'UnifrakturCook', cursive;
+*/
 .headline--big {
   font-size: 50px;
   font-size: 3.125rem;
@@ -149,7 +156,6 @@ figure img {
   background-color: #fff;
   position: absolute;
   top: 20px;
-  width: 600px;
 }
 
 /*
@@ -157,21 +163,13 @@ figure img {
 infos zun grid
  
 */
-/*
-font-family: 'UnifrakturMaguntia', cursive;
-font-family: 'Sancreek', cursive;
-font-family: 'Maiden Orange', cursive;
-font-family: 'UnifrakturCook', cursive;
-*/
 .site {
   display: -ms-grid;
   display: grid;
-  background-image: url(../images/page-kachel-bg.jpg);
-  background-repeat: repeat;
   border: 1px solid #c78e14;
   -ms-grid-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
   grid-template-columns: repeat(8, 12.5%);
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
